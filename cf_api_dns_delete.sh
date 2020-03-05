@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # CHANGE THESE
-auth_email="90XXXXXX@uwa.edu.au"
+auth_email="x0XXXXXX@xxx.edu.au"
 auth_key="XXXXXXXXXXX"
-zone_name="uwa.edu.au"
+zone_name="xxx.edu.au"
 zone_identifier=$(curl -s -X GET "https://api.cloudflare.com/client/v4/zones?name=$zone_name" -H "X-Auth-Email: $auth_email" -H "X-Auth-Key: $auth_key" -H "Content-Type: application/json" | grep -Po '(?<="id":")[^"]*' | head -1 )
 
 # MAYBE CHANGE THESE
